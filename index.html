@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+        body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+        .main-by-navbar {
+            width: 100vw;
+        }
+
+        .container-by-navbar {
+            width: 100%;
+            margin: auto;
+        }
+
+        .img-by-navbar {
+            background-image: url('designer_1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 950px;
+            width: 70%;
+            margin-left: auto;
+            display: block;
+        }
+
+        .navbar-flex {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 95%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-around;  
+            align-items: center;
+            padding: 5px;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            align-items: center;
+        }
+        .nav a{
+            text-decoration: none;
+            color: #505F98;
+            font-weight: 400;
+            font-size: 14px;
+        }
+       
+        .nav-button  button{
+            width: 160px;
+            height: 26px;
+            top: 18px;
+            color: white;
+            background-color: #111B47;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .img-title{
+            position: absolute;
+            left: 30%;
+            top: 40%;
+            transform: translateX(-50%);
+            width: 40%;
+            padding: 10px;
+            text-align: center;
+        }
+        .img-title h1{
+            color: #091133;
+            font-size: 36px !important;
+        }
+        .img-title p{
+            line-height: 22px;
+            font-size: 15px;
+            color: #505F98;
+        }
+        .btn{
+            margin: 20px 10px;
+            border-radius: 2px;
+            height: 36px;
+            width: 189px;
+            color: white;
+            background-color: #111B47;
+            border: none;
+            cursor: pointer;
+            font-size: 12px ;
+        }
+
+        @media(max-width:992px){
+
+            .img-by-navbar {
+           
+            height: 700px;
+           
+        }
+            .img-title{
+            width: 60%;
+            margin-left: 10px !important;
+
+        
+        }
+            .img-title h1{
+            font-size: 25px !important;
+        }
+        .img-title p{
+            font-size: 12px;
+        }
+        .navbar-flex h2{
+            font-size: 18px;
+        }
+        .btn{
+            margin-top: 20px;
+            border-radius: 2px;
+            height: 30px;
+            width: 149px;
+            color: white;
+            background-color: #111B47;
+            border: none;
+            cursor: pointer;
+            font-size: 12px ;
+        }
+       
+        }
+        @media(max-width:768px){
+            .img-by-navbar {
+           height: 650px;
+       }
+            
+            .img-by-navbar {
+            width: 100%;    
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            align-items: center;
+        }
+        .nav a{
+            font-size: 12px;
+        }
+
+        .navbar-flex h2{
+            font-size: 16px;
+        }
+        .nav-button  button{
+            width: 100px;
+        }
+        .img-title{
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translateX(-50%);
+            width: 80%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .img-title h1{
+            font-size: 20px !important;
+            
+        }
+        .img-title p{
+            font-size: 10px;
+        }
+        
+
+
+        }
+        @media(max-width:576px){
+            .img-by-navbar {
+           height: 500px;
+       }
+            .img-by-navbar {
+            width: 95%;
+        }
+        .nav-button  button{
+            width: 90px;
+            font-size: 10px;
+        }
+
+        .navbar-flex h2{
+            display: none;
+        }
+        .img-title h1{
+            font-size: 18px;
+        }
+        .img-title p{
+            font-size: 9px;
+        }
+        .img-title button{
+            font-size: 9px;
+            width: 80px;
+            margin: 10px 3px;
+        }  
+        .img-title{
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translateX(-50%);
+            width: 80%;
+            text-align: center;
+            margin: auto;
+        }
+
+       }
+        
+        
+       .main-second-part {
+    width: 100%;
+}
+
+.container-second-part {
+    width: 90%;
+    margin: 50px auto;
+    padding-left: 10px;
+}
+
+.title-and-img-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.title-by-second-part {
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.title-by-second-part h1 {
+    color: #091133;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.title-by-second-part p {
+    line-height: 1.6;
+    color: #505F98;
+    font-size: 16px;
+}
+
+.img-second-part {
+    width: 40%;
+    max-height: 400px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.img-second-part img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.second-part-short-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
+    margin-top: 50px;
+}
+
+.one {
+    line-height: 1.8;
+}
+
+.one h2 {
+    font-size: 20px;
+}
+
+.one p {
+    font-size: 14px;
+    color: #505F98;
+}
+
+.fa-house {
+    font-size: 22px;
+}
+
+/* Medium Screens (Tablets & Small Laptops) */
+@media (max-width: 992px) {
+    .title-by-second-part {
+        width: 50%;
+    }
+
+    .title-by-second-part h1 {
+        font-size: 26px;
+    }
+
+    .title-by-second-part p {
+        font-size: 14px;
+    }
+
+    .one h2 {
+        font-size: 18px;
+    }
+
+    .one p {
+        font-size: 13px;
+    }
+
+    .fa-house {
+        font-size: 18px;
+    }
+
+    .img-second-part {
+        width: 60%;
+    }
+
+    .img-second-part img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Small Screens (Tablets & Large Phones) */
+@media (max-width: 768px) {
+    .title-and-img-flex {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .title-by-second-part {
+        width: 90%;
+    }
+
+    .img-second-part {
+        width: 90%;
+    }
+}
+
+/* Extra Small Screens (Mobile Phones) */
+@media (max-width: 576px) {
+    .title-by-second-part {
+        width: 100%;
+    }
+
+    .img-second-part {
+        width: 100%;
+    }
+
+    .img-second-part img {
+        width: 90%;
+    }
+}
+
+
+        /* three part Start */
+
+
+        .main-by-three-section {
+    width: 100vw;
+}
+
+.container-by-three {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.flex-by-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-by-three {
+    width: 50%;
+    text-align: center;
+}
+
+.img-by-three img {
+    width: 80%;
+}
+
+.title-by-three {
+    width: 50%;
+    line-height: 1.6;
+}
+
+.title-by-three h2 {
+    color: #091133;
+    margin-bottom: 10px;
+}
+
+.title-by-three p {
+    line-height: 1.5;
+    color: #505F98;
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    .title-by-three h2 {
+        font-size: 26px;
+    }
+
+    .title-by-three p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-by-three {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .title-by-three {
+        width: 90%;
+    }
+
+    .img-by-three {
+        width: 100%;
+    }
+
+    .img-by-three img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+    .title-by-three {
+        width: 90%;
+    }
+
+    .img-by-three img {
+        width: 80%;
+    }
+}
+
+        /* three part End */
+
+
+        /* four part Start */
+
+
+        .main-by-four-section {
+    width: 100vw;
+}
+
+.container-by-four {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+
+}
+
+.flex-by-four {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.img-by-four {
+    width: 50%;
+    text-align: center;
+}
+
+.img-by-four img {
+    width: 80%;
+}
+
+.title-by-four {
+    width: 50%;
+    line-height: 1.6;
+}
+
+.title-by-four h2 {
+    color: #091133;
+    margin-bottom: 10px;
+}
+
+.title-by-four p {
+    line-height: 1.5;
+    color: #505F98;
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    .title-by-four h2 {
+        font-size: 26px;
+    }
+
+    .title-by-four p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-by-four {
+    margin: 0px ;
+
+}
+    .flex-by-four {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .title-by-four {
+        width: 90%;
+    }
+
+    .img-by-four {
+        width: 100%;
+    }
+
+    .img-by-four img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+    .title-by-four {
+        width: 90%;
+        text-align: center;
+    }
+
+    .img-by-four img {
+        width: 80%;
+    }
+}
+
+        /* four part End */
+
+
+
+        /* five part Start */
+
+
+        .main-by-five-section{
+            width: 100vw;
+        }
+
+
+        .container-by-five{
+            margin: auto;
+            width: 90%;
+            margin-top: 40px;
+        }
+        .flex-by-five{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:20px ;
+
+        }
+        .img-by-five{
+            width: 50%;
+            text-align: center;
+        }
+        .img-by-five img{
+            width: 80%;
+        }
+        .title-by-five{
+            width: 50%;
+            line-height: 35px;
+        }
+        .title-by-five h2{
+            color: #091133;
+            padding-bottom: 10px;
+        }
+        .title-by-five p{
+            line-height: 22px;
+            color: #505F98;
+        }
+        @media(max-width:992px){
+            .title-by-five h1{
+            font-size: 26px;
+        }
+        .title-by-five p{
+            font-size: 13px;
+        }
+        }
+        @media(max-width:768px){
+            .flex-by-five{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 30px;
+        }
+        .title-by-five{
+            width: 90%;
+            text-align: center;
+
+        }
+        .img-by-five img {
+            width: 60%;
+        }
+        .img-by-five {
+            width: 100%;
+            text-align: center;
+        }
+        }
+        @media(max-width:576px){
+            .title-by-five{
+            width: 90%;
+            text-align: center;
+
+        }
+        .img-by-five img {
+            width: 80%;
+        }
+        }
+        /* five part End */
+
+        /* footer part start */
+
+        .main-footer{
+            width: 100vw;
+            background-color:#E7ECFF;
+        }
+        .container-footer{
+            background-color:#E7ECFF;
+            width: 90%;
+            margin: auto;
+            margin-top: 70px;
+        }
+        .title-footer{
+            display: flex;
+            justify-content: space-between;
+            gap: 80px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .title-footer-one{
+            width: 40%;
+            padding:10px ;
+            line-height: 30px;
+        }
+        .footer-button button{
+            margin: 25px 15px;
+            width: 160px;
+            height: 26px;
+            top: 18px;
+            color: white;
+            background-color: #111B47;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        @media(max-width:576px){
+            .title-footer{
+            display: flex;
+            justify-content: space-between;
+            gap: 85px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .title-footer-one{
+            width: 80%;
+        }
+        .footer-button button{
+            width: 90px;
+            font-size: 10px;
+        }
+        }
+        /* footer part End */
+
+
+
+        .last-footer-flex{
+            margin-top: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            border-bottom: 2px solid;
+            border-color: #b1bbe4;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .landing{
+            font-size: 20px;
+            color: #111B47;
+        }
+        .last-footer-button button{
+           
+            width: 160px;
+            height: 26px;
+           
+            color: white;
+            background-color: #111B47;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        @media(max-width:992px){
+            .landing{
+            font-size: 18px;
+        }
+        .your{
+            font-size: 14px;
+        }
+        .last-footer-button button{
+           
+           width: 150px;
+           font-size: 12px;
+       }
+        
+
+        }
+        @media(max-width:768px){
+            .landing{
+            font-size: 16px;
+        }
+        .your{
+            font-size: 12px;
+        }
+        .last-footer-button button{
+           
+           width: 140px;
+           font-size: 10px;
+       }
+        
+
+        }
+        @media(max-width:576px){
+            .landing{
+            font-size: 14px;
+        }
+        .your{
+            font-size: 10px;
+        }
+        .last-footer-button button{
+           
+           width: 80px;
+           font-size: 10px;
+       }
+        
+
+        }
+        .the-end{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main-by-navbar">
+        <div class="container-by-navbar">
+            <div class="img-by-navbar">
+                <div class="navbar-flex">
+                    <div class="nav">
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Contact</a>
+                    </div>
+                    <h2>Landing</h2>
+                    <div class="nav-button ">
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="img-title">
+                    <h1>Introduce Your Product <br>
+                        Quickly & Effectively 
+                    </h1><br>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dignissimos, 
+                       
+                         nulla? Dolorum amet provident, <br> <br>
+                          impedit eos qui suscipit beatae quisquam eaque 
+                          asperiores, sit, aperiam nobis quo.
+                          Nemo dolores, odio exercitationem odit tenetur magni 
+                          velit explicabo neque.
+
+                    </p>
+                    <button class="btn">Purchase Ul Kit</button>
+                    <button  class="btn" style="background-color: transparent; color: #000; border: 2px solid;  border-color: #000;">Learn More</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-second-part">
+        <div class="container-second-part">
+            <div class="title-and-img-flex">
+                <div class="title-by-second-part">
+                    <h1>Light, Fast and & PowerFull</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dignissimos, 
+                         nulla? Dolorum amet provident, <br> 
+                          impedit eos qui suscipit beatae quisquam eaque 
+                          asperiores, sit, aperiam nobis quo.
+                          Nemo dolores, odio exercitationem odit tenetur magni 
+                          velit explicabo neque.
+                    </p>
+                    <div class="second-part-short-flex">
+                        <div class="one">
+                            <i class="fa-solid fa-house"></i> 
+                            <h2>Title Goes Here</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet. 
+                                dolor sit amet.sit amet. dolor sit amet.sit amet.
+                            </p>
+                        </div>
+
+                        <div class="one">
+                            <i class="fa-solid fa-house"></i>
+                            <h2>Title Goes Here</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet. 
+                                dolor sit amet.sit amet. dolor sit amet.sit amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-second-part">
+                    <img src="undraw_happy_news_hxmt.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <h1 style="margin-top: 100px;">asdfjh</h1> -->
+
+
+    <div class="main-by-three-section">
+        <div class="container-by-three">
+            <div class="flex-by-three">
+            <div class="img-by-three">
+                <img src="undraw_social_influencer_sgsv (1).png" alt="" srcset="">
+            </div>
+            <div class="title-by-three">
+               
+                    <h2>Light, Fast and & PowerFull</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dignissimos, 
+                         nulla? Dolorum amet provident, <br> 
+                          impedit eos qui suscipit beatae quisquam eaque 
+                          asperiores, sit, aperiam nobis quo.
+                          Nemo dolores, odio exercitationem odit tenetur magni 
+                          velit explicabo neque.
+                    </p>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- asdfdf -->
+
+
+
+
+    <div class="main-by-four-section">
+        <div class="container-by-four">
+            <div class="flex-by-four">
+           
+            <div class="title-by-four">
+               
+                    <h2>Light, Fast and & PowerFull</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dignissimos, 
+                         nulla? Dolorum amet provident, <br> 
+                          impedit eos qui suscipit beatae quisquam eaque 
+                          asperiores, sit, aperiam nobis quo.
+                          Nemo dolores, odio exercitationem odit tenetur magni 
+                          velit explicabo neque.
+                    </p>
+            </div>
+            <div class="img-by-four">
+                <img src="undraw_mention_6k5d.png" alt="" srcset="">
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="main-by-five-section">
+        <div class="container-by-five">
+            <div class="flex-by-five">
+                <div class="img-by-five">
+                    <img src="undraw_mention_6k5d.png" alt="" srcset="">
+                </div>
+            <div class="title-by-five">
+               
+                    <h2>Light, Fast and & PowerFull</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dignissimos, 
+                         nulla? Dolorum amet provident, <br> 
+                          impedit eos qui suscipit beatae quisquam eaque 
+                          asperiores, sit, aperiam nobis quo.
+                          Nemo dolores, odio exercitationem odit tenetur magni 
+                          velit explicabo neque.
+                    </p>
+                    <div class="footer-button">
+                        <button>Purchase </button>
+                        
+                    </div>
+            </div>
+          
+
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="main-footer">
+        <div class="container-footer">
+            <div class="title-footer">
+                <div class="title-footer-one">
+                <h2>
+                    A Price TO Suit Everyone
+                </h2><br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Id impedit harum quae 
+                    labore iure dolor doloribus at modi exercitationem ea.
+                </p>
+            </div>
+            <div class="footer-price">
+                <h1>$40</h1>
+            </div>
+
+            <div class="footer-button">
+                <button>Purchase Ul Kit</button>
+                
+            </div>
+        </div>
+
+       <div class="last-footer">
+            <div class="last-footer-flex">
+                <div class="your">
+                    2023 Yourcompany
+                </div>
+                <div class="landing">
+                    <h2>
+                        Landing
+                    </h2>
+                </div>
+
+                <div class="last-footer-button">
+                    <button>Purchase now</button>
+                </div>
+            </div>
+
+           <div class="the-end">
+            <div class="nav">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+                <div class="icons">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                
+           
+           
+           </div>
+        
+       </div>
+    </div>
+</div>
+
+
+
+    
+
+
+</body>
+
+</html>
